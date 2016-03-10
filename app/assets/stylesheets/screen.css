@@ -1,0 +1,117 @@
+/* line 3, ../sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/screen.scss */
+html,
+body,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* @group mixins */
+/* @end */
+/* @group diamonds */
+/* line 55, ../sass/screen.scss */
+.diamonds {
+  font: Helvetica, Arial, sans-serif;
+  font-size: 0;
+  margin: 40px auto;
+}
+/* line 78, ../sass/screen.scss */
+.diamonds > li {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 80px;
+}
+@media only screen and (max-width: 537px) {
+  /* line 78, ../sass/screen.scss */
+  .diamonds > li {
+    margin-right: 0;
+    width: 160px;
+  }
+}
+/* line 88, ../sass/screen.scss */
+.no-csstransforms .diamonds > li {
+  margin: 0 20px 20px 0;
+}
+/* line 93, ../sass/screen.scss */
+.diamonds .diamond {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: transparent;
+  -webkit-box-shadow: 0 0 0 1px #cccccc;
+  -moz-box-shadow: 0 0 0 1px #cccccc;
+  box-shadow: 0 0 0 1px #cccccc;
+  color: #000;
+  display: block;
+  height: 190px;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  position: relative;
+  text-decoration: none;
+  width: 190px;
+}
+/* line 106, ../sass/screen.scss */
+.csstransforms .diamonds .diamond {
+  overflow: hidden;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+@media only screen and (max-width: 537px) {
+  /* line 106, ../sass/screen.scss */
+  .csstransforms .diamonds .diamond {
+    height: 160px;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    width: 160px;
+  }
+}
+/* line 118, ../sass/screen.scss */
+.diamonds .content {
+  display: table-cell;
+  height: 190px;
+  padding: 0 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  text-align: center;
+  vertical-align: middle;
+  width: 190px;
+}
+@media only screen and (max-width: 537px) {
+  /* line 128, ../sass/screen.scss */
+  .csstransforms .diamonds .content {
+    height: 160px;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    width: 160px;
+  }
+}
+
+/* @end */
+Status API Training Shop Blog About Pricing
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help

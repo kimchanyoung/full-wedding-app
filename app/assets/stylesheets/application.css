@@ -15,3 +15,51 @@
  *= require foundation_and_overrides
 
  */
+
+ /*.title {
+  position: absolute;
+  color: white;
+  left: 10%;
+  top: 49%;
+  transform: translateY(-50%);
+ }
+
+.title {
+  margin: 1em;
+}
+
+.content-title {
+  margin: 1em;
+}
+
+.wedding-subsection {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+#about-btn {
+  right: 27%;
+  top: 11%;
+}
+
+#wedding-btn {
+  right: 17.5%;
+  top: 24.7%;
+}
+
+#registry-btn {
+  right: 27%;
+  top: 38.4%;
+}
+
+#rsvp-btn {
+  right: 17.5%;
+  top: 52.1%;
+}
+
+#acc-btn {
+  right: 27%;
+  top: 65.8%;
+}
+*/
