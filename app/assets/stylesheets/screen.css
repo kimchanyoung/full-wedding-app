@@ -8,7 +8,7 @@
 /* line 9, ../sass/screen.scss */
 html,
 body,
-ul {
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -25,15 +25,15 @@ ul {
 }
 /* line 78, ../sass/screen.scss */
 .diamonds > li {
-  display: inline-block;
+  display: block;
   font-size: 18px;
-  margin-right: 80px;
+  margin-right: 70px;
 }
 @media only screen and (max-width: 537px) {
   /* line 78, ../sass/screen.scss */
   .diamonds > li {
     margin-right: 0;
-    width: 160px;
+    width: 140px;
   }
 }
 /* line 88, ../sass/screen.scss */
@@ -48,12 +48,12 @@ ul {
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #cccccc;
-  -moz-box-shadow: 0 0 0 1px #cccccc;
-  box-shadow: 0 0 0 1px #cccccc;
-  color: #000;
+  -webkit-box-shadow: 0 0 0 1px white;
+  -moz-box-shadow: 0 0 0 1px white;
+  box-shadow: 0 0 0 1px white;
+  color: white;
   display: block;
-  height: 190px;
+  height: 140px;
   overflow: hidden;
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -62,7 +62,7 @@ ul {
   perspective: 1000;
   position: relative;
   text-decoration: none;
-  width: 190px;
+  width: 140px;
 }
 /* line 106, ../sass/screen.scss */
 .csstransforms .diamonds .diamond {
@@ -76,19 +76,19 @@ ul {
 @media only screen and (max-width: 537px) {
   /* line 106, ../sass/screen.scss */
   .csstransforms .diamonds .diamond {
-    height: 160px;
+    height: 140px;
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
     -ms-transform: rotate(0);
     -o-transform: rotate(0);
     transform: rotate(0);
-    width: 160px;
+    width: 140px;
   }
 }
 /* line 118, ../sass/screen.scss */
 .diamonds .content {
   display: table-cell;
-  height: 190px;
+  height: 140px;
   padding: 0 10px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -97,21 +97,41 @@ ul {
   transform: rotate(45deg);
   text-align: center;
   vertical-align: middle;
-  width: 190px;
+  width: 140px;
 }
 @media only screen and (max-width: 537px) {
   /* line 128, ../sass/screen.scss */
   .csstransforms .diamonds .content {
-    height: 160px;
+    height: 140px;
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
     -ms-transform: rotate(0);
     -o-transform: rotate(0);
     transform: rotate(0);
-    width: 160px;
+    width: 140px;
   }
 }
 
+.diamond:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: white;
+  z-index: -1;
+  -webkit-transform:scaleX(0);
+      -ms-transform:scaleX(0);
+          transform:scaleX(0);
+  -webkit-transition: -webkit-transform .5s;
+          transition:         transform .5s;
+}
+.diamond:hover {
+  color: black;
+}
+.diamond:hover:before {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 /* @end */
-Status API Training Shop Blog About Pricing
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help

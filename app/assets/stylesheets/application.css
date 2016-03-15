@@ -16,11 +16,11 @@
 
  */
 
- /*.title {
+ .title {
   position: absolute;
   color: white;
   left: 10%;
-  top: 49%;
+  top: 46%;
   transform: translateY(-50%);
  }
 
@@ -39,27 +39,21 @@
 }
 
 #about-btn {
-  right: 27%;
-  top: 11%;
+  margin: 50px 0 0 550px;
 }
 
 #wedding-btn {
-  right: 17.5%;
-  top: 24.7%;
+  margin: -35px 0 0 655px;
 }
 
 #registry-btn {
-  right: 27%;
-  top: 38.4%;
+  margin: -35px 0 0 550px;
 }
 
 #rsvp-btn {
-  right: 17.5%;
-  top: 52.1%;
+  margin: -35px 0 0 655px;
 }
 
 #acc-btn {
-  right: 27%;
-  top: 65.8%;
+
 }
-*/

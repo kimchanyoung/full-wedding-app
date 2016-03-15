@@ -17,33 +17,54 @@
 
 
 $(function(){ $(document).foundation();
-  $('#about-btn').click(function(e){
-    $('#wedding-content').hide();
-    $('#registry-content').hide();
-    $('#rsvp-content').hide();
-    $('#about-content').show();
-  });
 
-  $('#wedding-btn').click(function(e){
-    $('#about-content').hide();
-    $('#registry-content').hide();
-    $('#rsvp-content').hide();
-    $('#wedding-content').show();
-  });
+  $.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete) {
+    var args = $.speed(duration, easing, complete);
+    var step = args.step;
+    return this.each(function(i, e) {
+      args.complete = $.proxy(args.complete, e);
+      args.step = function(now) {
+        $.style(e, 'transform', 'rotate(' + now + 'deg)');
+        if (step) return step.apply(e, arguments);
+      };
 
-  $('#registry-btn').click(function(e){
-    $('#about-content').hide();
-    $('#wedding-content').hide();
-    $('#rsvp-content').hide();
-    $('#registry-content').show();
-  });
+      $({deg: startAngle}).animate({deg: endAngle}, args);
+    });
+  };
 
-  $('#rsvp-btn').click(function(e){
-    $('#about-content').hide();
-    $('#wedding-content').hide();
-    $('#registry-content').hide();
-    $('#rsvp-content').show();
-  });
+  // $.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete){
+  //   return this.each(function(){
+  //       var elem = $(this);
 
+  //       $({deg: startAngle}).animate({deg: endAngle}, {
+  //           duration: duration,
+  //           easing: easing,
+  //           step: function(now){
+  //               elem.css({
+  //                 'transform':'rotate('+now+'deg)'
+  //               });
+  //           },
+  //           complete: complete || $.noop
+  //       });
+  //   });
+  // };
+
+  $('.diamond').click(function(e) {
+    $(this).parent().siblings().slideUp('slow');
+    $(this).children('.content').hide();
+    $(this).animateRotate(45, 0, {
+      duration: 1000,
+      easing: 'swing',
+      complete: function() {
+        $(this).animate({
+          width: '50%',
+          height: '610px',
+          'margin-top': '-3%',
+          'margin-left': '55%',
+          'margin-right': '0'
+        }, 500);
+      }
+    });
+  });
 
 });
