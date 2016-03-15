@@ -17,6 +17,7 @@
 
 
 $(function(){ $(document).foundation();
+  var aboutUsContent ="<div class='row'><div class='large-12 text-center columns'><p>Hi there. this is some content. This is where content goes. This will be information about us and stuff.</p></div></div>";
 
   $.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete) {
     var args = $.speed(duration, easing, complete);
@@ -32,39 +33,27 @@ $(function(){ $(document).foundation();
     });
   };
 
-  // $.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete){
-  //   return this.each(function(){
-  //       var elem = $(this);
-
-  //       $({deg: startAngle}).animate({deg: endAngle}, {
-  //           duration: duration,
-  //           easing: easing,
-  //           step: function(now){
-  //               elem.css({
-  //                 'transform':'rotate('+now+'deg)'
-  //               });
-  //           },
-  //           complete: complete || $.noop
-  //       });
-  //   });
-  // };
-
   $('.diamond').click(function(e) {
-    $(this).parent().siblings().slideUp('slow');
-    $(this).children('.content').hide();
-    $(this).animateRotate(45, 0, {
-      duration: 1000,
-      easing: 'swing',
-      complete: function() {
-        $(this).animate({
-          width: '50%',
-          height: '610px',
-          'margin-top': '-3%',
-          'margin-left': '55%',
-          'margin-right': '0'
-        }, 500);
-      }
-    });
+    if (!$(this).hasClass('maximized')) {
+      $(this).parent().siblings().slideUp('slow');
+      $(this).children('.content').hide();
+      $(this).animateRotate(45, 0, {
+        duration: 1000,
+        easing: 'swing',
+        complete: function() {
+          $(this).animate({
+            width: '450px',
+            height: '620px',
+            'margin-top': '-3%',
+            'margin-left': '55%',
+            'margin-right': '0'
+          }, 500);
+          $(this).toggleClass("maximized");
+          var $thisContent = $(this).children('.full-content');
+          $thisContent.slideDown();
+        }
+      });
+    }
   });
 
 });
