@@ -136,7 +136,8 @@ li {
 
 .maximized {
   pointer-events: none !important;
-
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  color: black !important;
 }
 
 .maximized .content {
@@ -145,9 +146,5 @@ li {
   -ms-transform: rotate(0) !important;
   -o-transform: rotate(0) !important;
   transform: rotate(0) !important;
-  margin: 0 !important;
-  width: 450px !important;
-  height: 620px !important;
 }
-
 /* @end */

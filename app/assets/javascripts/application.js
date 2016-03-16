@@ -17,6 +17,8 @@
 
 
 $(function(){ $(document).foundation();
+  $backup = Object.freeze($('.diamonds').clone());
+
   var aboutUsContent ="<div class='row'><div class='large-12 text-center columns'><p>Hi there. this is some content. This is where content goes. This will be information about us and stuff.</p></div></div>";
 
   $.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete) {
@@ -33,12 +35,22 @@ $(function(){ $(document).foundation();
     });
   };
 
-  $('.diamond').click(function(e) {
+  var reset = function() {
+    $('.maximized').slideUp();
+    $('.diamonds').html($backup.clone().children());
+    $('.diamonds').slideDown();
+  }
+
+  $('.title').click(function(){
+    reset();
+  })
+
+  $('.diamonds').on('click', '.diamond', function(e) {
     if (!$(this).hasClass('maximized')) {
       $(this).parent().siblings().slideUp('slow');
       $(this).children('.content').hide();
       $(this).animateRotate(45, 0, {
-        duration: 1000,
+        duration: 500,
         easing: 'swing',
         complete: function() {
           $(this).animate({
@@ -49,8 +61,8 @@ $(function(){ $(document).foundation();
             'margin-right': '0'
           }, 500);
           $(this).toggleClass("maximized");
-          var $thisContent = $(this).children('.full-content');
-          $thisContent.slideDown();
+          // var $thisContent = $(this).children('.full-content');
+          // $thisContent.slideDown();
         }
       });
     }
