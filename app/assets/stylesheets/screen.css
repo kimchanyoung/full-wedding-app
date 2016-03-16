@@ -21,7 +21,7 @@ li {
 .diamonds {
   font: Helvetica, Arial, sans-serif;
   font-size: 0;
-  margin: 40px auto;
+  margin: 40px 0 0 0;
 }
 /* line 78, ../sass/screen.scss */
 .diamonds > li {
