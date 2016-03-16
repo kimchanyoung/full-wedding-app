@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-    if params[:password] == 'farts'
+    if params[:password] == 'printers'
       cookies[:logged_in] = true
     end
 
