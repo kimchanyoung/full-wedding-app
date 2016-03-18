@@ -38,10 +38,6 @@ li {
     width: 140px;
   }
 }
-/* line 88, ../sass/screen.scss */
-.no-csstransforms .diamonds > li {
-  margin: 0 20px 20px 0;
-}
 /* line 93, ../sass/screen.scss */
 .diamonds .diamond {
   -webkit-backface-visibility: hidden;

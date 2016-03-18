@@ -36,7 +36,7 @@ $(function(){ $(document).foundation();
   var reset = function() {
     $('.diamond').slideUp();
     setTimeout(function(){
-      $('.diamonds').html($backup.clone().children());
+      $('.diamonds').html($backup.clone().children()).hide();
       $('.diamonds').slideDown();
     },500)
     $('#main-wrapper').toggleClass("click-to-exit");
@@ -51,9 +51,9 @@ $(function(){ $(document).foundation();
 
       var widthAmt;
       if ($('#wedding-content').is(e.target)) {
-        widthAmt = '95vw';
+        widthAmt = '90vw';
       } else {
-        widthAmt = '70vw';
+        widthAmt = '50vw';
       }
 
       $diamond.animateRotate(45, 0, {
@@ -62,7 +62,7 @@ $(function(){ $(document).foundation();
         complete: function() {
           $diamond.animate({
             width: widthAmt,
-            height: '95vh'
+            height: '95vh',
           }, 1000);
 
           $diamond.toggleClass("maximized");
