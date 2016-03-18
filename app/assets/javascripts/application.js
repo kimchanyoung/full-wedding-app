@@ -71,24 +71,27 @@ $(function(){ $(document).foundation();
     reset();
   })
 
-  $('#main-wrapper').on('click', function (e){
-    var $container = $(".diamond");
-
-    if (!$container.is(e.target)
-      && $container.has(e.target).length === 0
-      && $('#main-wrapper').has($('.maximized') !== 0))
-    {
+  $('body').on('click', function (e){
+    // reset on 3 conditions:
+    // There is a visible maximized window
+    // It is not a diamond
+    // It is within a maximized window
+    if ( $('.maximized:visible').length > 0
+      && !$('.diamond').is(e.target)
+      && !$('.maximized').is(e.target)
+      && !$('.li-container').is(e.target) ) {
       reset();
     }
+
+    // var $container = $(".maximized");
+
+    // if (!$container.is(e.target)
+    //   && $container.has(e.target).length === 0
+    //   && $('.maximized:visible').length >= 0)
+    // {
+    //   reset();
+    // }
   });
-
-  // $('#main-wrapper').click(function(e) {
-  //   if (e.target.class !== 'maximized') &&
-
-  //   if (e.target.class != 'maximized' && !$('.maximized').find(e.target).length && $('#main-wrapper').find('.maximized').length != 0) {
-  //     reset();
-  //   }
-  // });
 });
 
 $(function(){ $(document).foundation(); });
