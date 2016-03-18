@@ -21,13 +21,15 @@ li {
 .diamonds {
   font: Helvetica, Arial, sans-serif;
   font-size: 0;
-  margin: 40px 0 0 0;
+  position: fixed;
+  right: 15%;
+  top: 10%;
+  /*margin: 5vh 0 80vh 0;*/
 }
 /* line 78, ../sass/screen.scss */
 .diamonds > li {
   display: block;
   font-size: 18px;
-  margin-right: 70px;
 }
 @media only screen and (max-width: 537px) {
   /* line 78, ../sass/screen.scss */
@@ -123,7 +125,7 @@ li {
       -ms-transform:scaleX(0);
           transform:scaleX(0);
   -webkit-transition: -webkit-transform .5s;
-          transition:         transform .5s;
+          transition: transform .5s;
 }
 .diamond:hover {
   color: black;

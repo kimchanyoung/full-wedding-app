@@ -13,16 +13,18 @@
  *= require_tree .
  *= require_self
  *= require foundation_and_overrides
+ *= require font-awesome
 
  */
 
  .title {
   position: absolute;
   color: white;
-  left: 10%;
-  top: 46%;
+  left: 20%;
+  top: 49%;
   transform: translateY(-50%);
   font-family: 'Hammersmith One';
+  z-index: 1;
  }
 
 .title {
@@ -39,7 +41,7 @@
   border: 1px solid black;
 }
 
-#about-btn {
+/*#about-btn {
   margin: 50px 0 0 550px;
 }
 
@@ -53,10 +55,29 @@
 
 #rsvp-btn {
   margin: -35px 0 0 655px;
+}*/
+
+#about-container {
+  padding-left: 500px;
 }
 
-#acc-btn {
+#wedding-container {
+  padding-left: 500px;
+}
 
+#registry-container {
+  padding-left: 500px;
+}
+
+#rsvp-container {
+  padding-left: 500px;
+}
+
+.close-maximized {
+  display: inline-block;
+  float: right;
+  margin: 2%;
+  z-index: 100;
 }
 
 .const-img {
