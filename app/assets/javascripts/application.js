@@ -62,13 +62,12 @@ $(function(){ $(document).foundation();
         complete: function() {
           $diamond.animate({
             width: widthAmt,
-            height: '95vh',
+            height: '95vh'
           }, 1000);
 
           $diamond.toggleClass("maximized");
           setTimeout(function(){
-            // var $thisContent = $diamond.children('.full-content');
-            // $thisContent.slideDown();
+
           },1000)
         }
       });
@@ -86,15 +85,6 @@ $(function(){ $(document).foundation();
       && !$('.li-container').is(e.target) ) {
       reset();
     }
-
-    // var $container = $(".maximized");
-
-    // if (!$container.is(e.target)
-    //   && $container.has(e.target).length === 0
-    //   && $('.maximized:visible').length >= 0)
-    // {
-    //   reset();
-    // }
   });
 });
 

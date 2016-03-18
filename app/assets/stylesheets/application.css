@@ -57,25 +57,25 @@
   margin: -35px 0 0 655px;
 }*/
 
-/*#about-container {
-  margin-left: 75%;
-  margin-top: 7%;
+#about-container {
+  margin-left: 50px;
+  margin-top: 7px;
 }
 
 #wedding-container {
-  margin-left: 90%;
-  margin-top: -4%;
-}*/
+  margin-left: 160px;
+  margin-top: -29px;
+}
 
-/*#registry-container {
-  margin-left: 75%;
-  margin-top: -4%;
-}*/
+#registry-container {
+  margin-left: 50px;
+  margin-top: -29px;
+}
 
-/*#rsvp-container {
- margin-left:90%;
- margin-top: -4%
-}*/
+#rsvp-container {
+ margin-left:160px;
+ margin-top: -29px;
+}
 
 .close-maximized {
   display: inline-block;
