@@ -18,9 +18,9 @@
  */
 
  .title {
-  position: absolute;
+  position: fixed;
   color: white;
-  left: 20%;
+  left: 10%;
   top: 49%;
   transform: translateY(-50%);
   font-family: 'Hammersmith One';
@@ -57,21 +57,25 @@
   margin: -35px 0 0 655px;
 }*/
 
-#about-container {
-  margin-left: 500px;
+/*#about-container {
+  margin-left: 75%;
+  margin-top: 7%;
 }
 
 #wedding-container {
-  margin-left: 500px;
-}
+  margin-left: 90%;
+  margin-top: -4%;
+}*/
 
-#registry-container {
-  margin-left: 500px;
-}
+/*#registry-container {
+  margin-left: 75%;
+  margin-top: -4%;
+}*/
 
-#rsvp-container {
-  margin-left: 500px;
-}
+/*#rsvp-container {
+ margin-left:90%;
+ margin-top: -4%
+}*/
 
 .close-maximized {
   display: inline-block;

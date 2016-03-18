@@ -48,12 +48,20 @@ $(function(){ $(document).foundation();
       $('#main-wrapper').toggleClass("click-to-exit");
       $diamond.parent().siblings().slideUp('slow');
       $diamond.children('.content').hide();
+
+      var widthAmt;
+      if ($('#wedding-content').is(e.target)) {
+        widthAmt = '95vw';
+      } else {
+        widthAmt = '70vw';
+      }
+
       $diamond.animateRotate(45, 0, {
         duration: 500,
         easing: 'swing',
         complete: function() {
           $diamond.animate({
-            width: '70vh',
+            width: widthAmt,
             height: '95vh'
           }, 1000);
 
@@ -72,10 +80,6 @@ $(function(){ $(document).foundation();
   })
 
   $('body').on('click', function (e){
-    // reset on 3 conditions:
-    // There is a visible maximized window
-    // It is not a diamond
-    // It is within a maximized window
     if ( $('.maximized:visible').length > 0
       && !$('.diamond').is(e.target)
       && !$('.maximized').is(e.target)
