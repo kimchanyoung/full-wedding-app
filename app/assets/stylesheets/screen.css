@@ -22,8 +22,9 @@ li {
   font: Helvetica, Arial, sans-serif;
   font-size: 0;
   position: fixed;
-  right: 15%;
-  top: 10%;
+  right: 25%;
+  top: 49%;
+  transform: translate(50%, -50%);
   /*margin: 5vh 0 80vh 0;*/
 }
 /* line 78, ../sass/screen.scss */

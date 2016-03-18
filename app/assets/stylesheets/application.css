@@ -20,9 +20,9 @@
  .title {
   position: fixed;
   color: white;
-  left: 10%;
+  left: 25%;
   top: 49%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   font-family: 'Hammersmith One';
   z-index: 1;
  }
