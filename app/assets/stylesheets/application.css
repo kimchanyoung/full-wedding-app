@@ -58,19 +58,19 @@
 }*/
 
 #about-container {
-  padding-left: 500px;
+  margin-left: 500px;
 }
 
 #wedding-container {
-  padding-left: 500px;
+  margin-left: 500px;
 }
 
 #registry-container {
-  padding-left: 500px;
+  margin-left: 500px;
 }
 
 #rsvp-container {
-  padding-left: 500px;
+  margin-left: 500px;
 }
 
 .close-maximized {
@@ -78,6 +78,7 @@
   float: right;
   margin: 2%;
   z-index: 100;
+  pointer-events: auto !important;
 }
 
 .const-img {

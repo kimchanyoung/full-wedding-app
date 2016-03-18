@@ -39,15 +39,13 @@ $(function(){ $(document).foundation();
       $('.diamonds').html($backup.clone().children());
       $('.diamonds').slideDown();
     },500)
+    $('#main-wrapper').toggleClass("click-to-exit");
   }
-
-  $('.title').click(function(){
-    reset();
-  })
 
   $('.diamonds').on('click', '.diamond', function(e) {
     var $diamond = $(this)
     if (!$diamond.hasClass('maximized')) {
+      $('#main-wrapper').toggleClass("click-to-exit");
       $diamond.parent().siblings().slideUp('slow');
       $diamond.children('.content').hide();
       $diamond.animateRotate(45, 0, {
@@ -73,6 +71,24 @@ $(function(){ $(document).foundation();
     reset();
   })
 
+  $('#main-wrapper').on('click', function (e){
+    var $container = $(".diamond");
+
+    if (!$container.is(e.target)
+      && $container.has(e.target).length === 0
+      && $('#main-wrapper').has($('.maximized') !== 0))
+    {
+      reset();
+    }
+  });
+
+  // $('#main-wrapper').click(function(e) {
+  //   if (e.target.class !== 'maximized') &&
+
+  //   if (e.target.class != 'maximized' && !$('.maximized').find(e.target).length && $('#main-wrapper').find('.maximized').length != 0) {
+  //     reset();
+  //   }
+  // });
 });
 
 $(function(){ $(document).foundation(); });
