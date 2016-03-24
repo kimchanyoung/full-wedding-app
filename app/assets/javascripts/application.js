@@ -47,7 +47,15 @@ $(function(){ $(document).foundation();
     if (!$diamond.hasClass('maximized')) {
       $('#main-wrapper').toggleClass("click-to-exit");
       $diamond.parent().siblings().slideUp('slow');
+      $diamond.parent().animate({
+        'margin': 0
+      })
       $diamond.children('.content').hide();
+
+      $diamond.animate({
+        top: '100%',
+        right: '100%'
+      });
 
       var widthAmt;
       if ($('#wedding-content').is(e.target)) {
@@ -58,17 +66,14 @@ $(function(){ $(document).foundation();
 
       $diamond.animateRotate(45, 0, {
         duration: 500,
-        easing: 'swing',
+        easing: 'linear',
         complete: function() {
           $diamond.animate({
             width: widthAmt,
             height: '95vh'
-          }, 1000);
+          }, 500);
 
           $diamond.toggleClass("maximized");
-          setTimeout(function(){
-
-          },1000)
         }
       });
     }

@@ -24,6 +24,8 @@ li {
   position: fixed;
   right: 25%;
   top: 49%;
+  height: 570px;
+  width: 350px;
   transform: translate(50%, -50%);
   /*margin: 5vh 0 80vh 0;*/
 }
