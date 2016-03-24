@@ -48,21 +48,26 @@ $(function(){ $(document).foundation();
       $('#main-wrapper').toggleClass("click-to-exit");
       $diamond.parent().siblings().slideUp('slow');
       $diamond.parent().animate({
-        'margin': 0
+        'margin': '0',
+        'left' : '5%',
+        'top': '5%'
       })
       $diamond.children('.content').hide();
 
-      $diamond.animate({
-        top: '100%',
-        right: '100%'
-      });
 
       var widthAmt;
       if ($('#wedding-content').is(e.target)) {
         widthAmt = '90vw';
+        leftMargin = '-55vw';
       } else {
         widthAmt = '50vw';
+        leftMargin = '-15vw';
       }
+
+      $diamond.animate({
+        top: '-2vh',
+        left: leftMargin
+      });
 
       $diamond.animateRotate(45, 0, {
         duration: 500,
@@ -70,7 +75,7 @@ $(function(){ $(document).foundation();
         complete: function() {
           $diamond.animate({
             width: widthAmt,
-            height: '95vh'
+            height: '85vh'
           }, 500);
 
           $diamond.toggleClass("maximized");
