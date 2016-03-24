@@ -147,4 +147,8 @@ li {
   -o-transform: rotate(0) !important;
   transform: rotate(0) !important;
 }
+
+.full-content {
+  padding: 1rem;
+}
 /* @end */

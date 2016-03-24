@@ -56,7 +56,7 @@ $(function(){ $(document).foundation();
 
 
       var widthAmt;
-      if ($('#wedding-content').is(e.target)) {
+      if ($('#about-content').is(e.target)) {
         widthAmt = '90vw';
         leftMargin = '-55vw';
       } else {
