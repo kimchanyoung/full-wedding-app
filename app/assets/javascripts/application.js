@@ -39,6 +39,7 @@ $(function(){ $(document).foundation();
       $('.diamonds').html($backup.clone().children()).hide();
       $('.diamonds').slideDown();
     },500)
+    $('.full-content').hide();
     $('#main-wrapper').toggleClass("click-to-exit");
   }
 
@@ -78,6 +79,9 @@ $(function(){ $(document).foundation();
             height: '85vh'
           }, 500);
 
+          setTimeout(function(){
+            $diamond.children('.full-content').slideDown('fast');
+          }, 500);
           $diamond.toggleClass("maximized");
         }
       });

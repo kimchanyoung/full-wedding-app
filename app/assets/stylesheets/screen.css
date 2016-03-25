@@ -138,6 +138,7 @@ li {
   pointer-events: none !important;
   background-color: rgba(255, 255, 255, 0.7) !important;
   color: black !important;
+  overflow-y: auto !important;
 }
 
 .maximized .content {
@@ -150,5 +151,6 @@ li {
 
 .full-content {
   padding: 1rem;
+  display: none;
 }
 /* @end */
