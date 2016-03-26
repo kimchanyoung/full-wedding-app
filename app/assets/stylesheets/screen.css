@@ -136,7 +136,7 @@ li {
 }
 
 .maximized {
-  pointer-events: none !important;
+  /*pointer-events: none !important;*/
   background-color: rgba(255, 255, 255, 0.7) !important;
   color: black !important;
   overflow-y: auto !important;
