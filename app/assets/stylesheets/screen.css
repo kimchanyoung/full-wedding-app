@@ -112,11 +112,11 @@ li {
   }
 }
 
-.diamond:before {
+.content:before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: -100px; left: -100px;
+  width: 400px; height: 400px;
   background: white;
   z-index: -1;
   -webkit-transform:scaleX(0);
@@ -129,7 +129,7 @@ li {
   color: black;
   cursor: pointer;
 }
-.diamond:hover:before {
+.content:hover:before {
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
           transform: scaleX(1);
