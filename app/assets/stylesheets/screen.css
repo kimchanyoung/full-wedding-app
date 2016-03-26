@@ -127,6 +127,7 @@ li {
 }
 .diamond:hover {
   color: black;
+  cursor: pointer;
 }
 .diamond:hover:before {
   -webkit-transform: scaleX(1);
@@ -152,5 +153,9 @@ li {
 .full-content {
   padding: 1rem;
   display: none;
+}
+
+a {
+  pointer-events: auto !important;
 }
 /* @end */
