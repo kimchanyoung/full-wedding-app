@@ -92,15 +92,12 @@ $(function(){ $(document).foundation();
     reset();
   })
 
-  // $('body').on('click', function (e){
-  //   if ( $('.maximized:visible').length > 0
-  //     && !$('.diamond').is(e.target)
-  //     && !$('.maximized').is(e.target)
-  //     && !$('.li-container').is(e.target)
-  //     && !$('.full-content').is(e.target) ) {
-  //     reset();
-  //   }
-  // });
+  $('body').on('click', function (e){
+    if ( $('.maximized:visible').length > 0
+      && $('body').is(e.target)) {
+      reset();
+    }
+  });
 });
 
 $(function(){ $(document).foundation(); });
