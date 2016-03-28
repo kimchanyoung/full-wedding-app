@@ -49,7 +49,7 @@
                 <h5>San Clemente, California 92672</h5>
 
                 <h4>July 30, 2016</h4>
-                <h5>4:00 pm</h5>
+                <h5>4:30 pm</h5>
 
                 <p>
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.053233110357!2d-117.62261558480134!3d33.42185648078209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcf414b1b718f9%3A0x23ffa29aaf562b5!2s415+Avenida+Granada%2C+San+Clemente%2C+CA+92672!5e0!3m2!1sen!2sus!4v1458930347569" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -60,7 +60,23 @@
                 <br />
 
                 <h3>Accommodations</h3>
-                <p>We have reserved some rooms at a discounted price at the San Clemente Holiday Inn Express. Please <%=link_to 'click here', 'http://bit.ly/JanelleChanWedding' %> to book rooms.</p>
+                <p>
+                  We have reserved some rooms at a discounted price at the San Clemente Holiday Inn Express. Please on the logo below to book rooms.
+                </p>
+                <p>
+                  <%= link_to image_tag('holiday-inn.png'), 'http://bit.ly/JanelleChanWedding', class: 'registry-btn' %>
+                </p>
+
+                <br />
+
+                <p>
+                  Alternatively, the <%= link_to 'Beachcomber Inn', 'http://thebeachcomberinn.com/'%> is a beaside inn nearby that has fantastic reviews. You can click below to visit their page.
+                </p>
+                <p>
+                  <%= link_to image_tag('beachcomber.png'), 'http://bit.ly/JanelleChanWedding', class: 'registry-btn' %>
+                </p>
+
+
               </div>
             </div>
 
@@ -197,7 +213,7 @@
                       <input type="hidden" name="fvv" value="0">
                       <input type="hidden" name="fbzx" value="-567068969123512273">
                       <div class="ss-item ss-navigate small-12 columns">
-                        <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+                        <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action button">
                       </div>
                     </ol>
                   </form>
