@@ -78,13 +78,18 @@
   overflow-y: auto;
 }
 
-.registry-btn img{
-  width: 250px;
+.registry-btn img {
+  width: 300px;
   height: auto;
   margin-top: 5px;
   padding: 15px 20px 15px 20px;
-  border: 1px solid black;
-  border-radius: 25px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+.registry-btn img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
 }
 
 .welcome-img {
