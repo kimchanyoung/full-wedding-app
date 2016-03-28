@@ -50,23 +50,23 @@ $(function(){ $(document).foundation();
       $diamond.parent().siblings().slideUp('slow');
       $diamond.parent().animate({
         'margin': '0',
-        'left' : '3%',
-        'top': '3%'
+        'left' : '-5vw',
+        'top': '-5vh'
       })
       $diamond.children('.content').hide();
 
 
       var widthAmt;
       if ($('#about-content').is(e.target)) {
-        widthAmt = '90vw';
-        leftMargin = '-55vw';
+        widthAmt = '95vw';
+        leftMargin = '-60vw';
       } else {
         widthAmt = '50vw';
         leftMargin = '-15vw';
       }
 
       $diamond.animate({
-        top: '-2vh',
+        top: '-10vh',
         left: leftMargin
       });
 
@@ -76,7 +76,7 @@ $(function(){ $(document).foundation();
         complete: function() {
           $diamond.animate({
             width: widthAmt,
-            height: '85vh'
+            height: '90vh'
           }, 500);
 
           setTimeout(function(){

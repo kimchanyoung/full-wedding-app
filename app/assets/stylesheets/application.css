@@ -23,13 +23,12 @@
   left: 25%;
   top: 49%;
   transform: translate(-50%, -50%);
-  font-family: 'Hammersmith One';
-  z-index: 1;
+  z-index: -1;
  }
 
-.title {
-  margin: 1em;
-  z-index: -1;
+.title h2{
+  font-size: 3em;
+  font-family: Pinyon Script;
 }
 
 .content-title {
@@ -95,8 +94,14 @@
 
 #bg-vid {
   position: fixed;
-  z-index: -99;
+  z-index: -1;
   width: 100%;
   height: 100%;
   border: 10px solid white;
 }
+
+/*html {
+  z-index: -100;
+  background-image: url('scenery.jpg');
+  background-size: cover;
+}*/
