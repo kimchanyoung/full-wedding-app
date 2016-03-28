@@ -24,8 +24,8 @@ li {
   position: fixed;
   right: 25%;
   top: 49%;
-  height: 570px;
-  width: 350px;
+  height: 500px;
+  width: 300px;
   transform: translate(50%, -50%);
 }
 /* line 78, ../sass/screen.scss */

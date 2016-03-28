@@ -50,8 +50,8 @@ $(function(){ $(document).foundation();
       $diamond.parent().siblings().slideUp('slow');
       $diamond.parent().animate({
         'margin': '0',
-        'left' : '5%',
-        'top': '5%'
+        'left' : '3%',
+        'top': '3%'
       })
       $diamond.children('.content').hide();
 
