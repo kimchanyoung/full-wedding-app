@@ -17,6 +17,10 @@
 
 
 $(function(){ $(document).foundation();
+  if ($(window).width() <= 750) {
+    $('.title').hide();
+    $('.diamonds').css('right', '55%');
+  }
   $backup = Object.freeze($('.diamonds').clone());
 
   $.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete) {
@@ -56,9 +60,12 @@ $(function(){ $(document).foundation();
 
       var contentHeightPropWin = ((500 - $(window).height()) / 30) + "vh";
       var bigContentLeftSize = (((1150-$(window).width())/75) - 59.5) + "vw";
+      if ($(window).width() <= 750) {
+        bigContentLeftSize = bigContentLeftSize/2;
+      }
 
       var widthAmt;
-      if ($('#about-content').is(e.target) || ($(window).width() <= 770)) {
+      if ($('#about-content').is(e.target) || ($(window).width() <= 750)) {
         widthAmt = '95vw';
         leftMargin = bigContentLeftSize;
       } else {
