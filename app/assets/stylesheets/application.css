@@ -104,3 +104,8 @@
   height: 100%;
   border: 10px solid white;
 }
+
+.about-fav {
+  width: 100%;
+  height: auto;
+}

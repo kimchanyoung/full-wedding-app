@@ -55,12 +55,10 @@ $(function(){ $(document).foundation();
       $diamond.children('.content').hide();
 
       var contentHeightPropWin = ((500 - $(window).height()) / 30) + "vh";
-      var contentHeight = $(window).height();
-
       var bigContentLeftSize = (((1150-$(window).width())/75) - 59.5) + "vw";
 
       var widthAmt;
-      if ($('#about-content').is(e.target)) {
+      if ($('#about-content').is(e.target) || ($(window).width() <= 770)) {
         widthAmt = '95vw';
         leftMargin = bigContentLeftSize;
       } else {

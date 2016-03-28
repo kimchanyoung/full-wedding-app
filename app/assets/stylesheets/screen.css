@@ -14,9 +14,7 @@ li {
   padding: 0;
 }
 
-/* @group mixins */
-/* @end */
-/* @group diamonds */
+
 /* line 55, ../sass/screen.scss */
 .diamonds {
   font: Helvetica, Arial, sans-serif;
@@ -73,18 +71,7 @@ li {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-@media only screen and (max-width: 537px) {
-  /* line 106, ../sass/screen.scss */
-  .csstransforms .diamonds .diamond {
-    height: 140px;
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -ms-transform: rotate(0);
-    -o-transform: rotate(0);
-    transform: rotate(0);
-    width: 140px;
-  }
-}
+
 /* line 118, ../sass/screen.scss */
 .diamonds .content {
   display: table-cell;
@@ -98,18 +85,6 @@ li {
   text-align: center;
   vertical-align: middle;
   width: 140px;
-}
-@media only screen and (max-width: 537px) {
-  /* line 128, ../sass/screen.scss */
-  .csstransforms .diamonds .content {
-    height: 140px;
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -ms-transform: rotate(0);
-    -o-transform: rotate(0);
-    transform: rotate(0);
-    width: 140px;
-  }
 }
 
 .content:before {
