@@ -11,6 +11,17 @@
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= favicon_link_tag 'favicon.ico' %>
     <%= csrf_meta_tags %>
+    <!--[if IE]>
+      <style type="text/css">
+        .bg-vid {
+          display: none;
+        }
+        body {
+          background-image: url('scenery.jpg');
+          background-size: cover;
+        }
+      </style>
+    <![endif]-->
   </head>
 
   <body>
