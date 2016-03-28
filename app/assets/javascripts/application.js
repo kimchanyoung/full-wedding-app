@@ -48,13 +48,16 @@ $(function(){ $(document).foundation();
     if (!$diamond.hasClass('maximized')) {
       $('#main-wrapper').toggleClass("click-to-exit");
       $diamond.parent().siblings().slideUp('slow');
+
       $diamond.parent().animate({
         'margin': '0',
-        'left' : '-5vw',
-        'top': '-5vh'
+        // 'left' : '-5vw',
+        // 'top': '-5vh'
       })
       $diamond.children('.content').hide();
 
+      var contentHeightPropWin = ((500 - $(window).height()) / 30) + "vh";
+      var contentHeight = $(window).height();
 
       var widthAmt;
       if ($('#about-content').is(e.target)) {
@@ -66,7 +69,7 @@ $(function(){ $(document).foundation();
       }
 
       $diamond.animate({
-        top: '-10vh',
+        top: contentHeightPropWin,
         left: leftMargin
       });
 
