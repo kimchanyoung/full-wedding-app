@@ -51,18 +51,18 @@ $(function(){ $(document).foundation();
 
       $diamond.parent().animate({
         'margin': '0',
-        // 'left' : '-5vw',
-        // 'top': '-5vh'
       })
       $diamond.children('.content').hide();
 
       var contentHeightPropWin = ((500 - $(window).height()) / 30) + "vh";
       var contentHeight = $(window).height();
 
+      var bigContentLeftSize = (((1150-$(window).width())/75) - 59.5) + "vw";
+
       var widthAmt;
       if ($('#about-content').is(e.target)) {
         widthAmt = '95vw';
-        leftMargin = '-60vw';
+        leftMargin = bigContentLeftSize;
       } else {
         widthAmt = '50vw';
         leftMargin = '-15vw';
