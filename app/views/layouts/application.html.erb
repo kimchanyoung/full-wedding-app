@@ -7,8 +7,7 @@
     <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
     <%= stylesheet_link_tag    "application" %>
-    <link href='https://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
-    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <link href='https://fonts.googleapis.com/css?family=Pinyon+Script|Open+Sans' rel='stylesheet' type='text/css'>    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= favicon_link_tag 'favicon.ico' %>
     <%= csrf_meta_tags %>
     <!--[if IE]>

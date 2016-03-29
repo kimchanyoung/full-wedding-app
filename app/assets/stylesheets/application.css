@@ -76,6 +76,7 @@
   height: 100%;
   width: 100%;
   overflow-y: auto;
+  font-family: 'Open Sans';
 }
 
 .registry-btn img {
@@ -110,6 +111,19 @@
   height: auto;
 }
 
+.overlay {
+ background:transparent;
+ position:relative;
+ width:80%;
+ height:400px; /* your iframe height */
+ top:400px;  /* your iframe height */
+ margin-top:-400px;  /* your iframe height */
+}
+
+.first-impressions {
+  font-size: .9em;
+}
+
 @media all and (max-width: 770px) {
   #bg-vid {
     display: none !important;
@@ -128,4 +142,4 @@
   .title h2 {
     color: black !important;
   }
-};
+}
