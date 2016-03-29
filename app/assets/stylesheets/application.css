@@ -110,7 +110,7 @@
   height: auto;
 }
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 770px) {
   #bg-vid {
     display: none !important;
   }
@@ -122,6 +122,10 @@
 
   .diamond {
     color: black !important;
-    box-shadow: 0 0 0 1px black !important;
+    box-shadow: 0 0 0 1px gray !important;
+  }
+
+  .title h2 {
+    color: black !important;
   }
 };
