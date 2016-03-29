@@ -109,3 +109,19 @@
   width: 100%;
   height: auto;
 }
+
+@media all and (max-width: 640px) {
+  #bg-vid {
+    display: none !important;
+  }
+
+  body {
+    background-image: url('pair.jpg');
+    background-size: cover;
+  }
+
+  .diamond {
+    color: black !important;
+    box-shadow: 0 0 0 1px black !important;
+  }
+};
