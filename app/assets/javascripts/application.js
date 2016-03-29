@@ -23,7 +23,7 @@ $(function(){ $(document).foundation();
   }
 
   if ($(window).width() <=800) {
-    document.body.style.backgroundImage = "url('pair.png')";
+    document.body.style.backgroundImage = "url('pair.jpg')";
   }
 
   $backup = Object.freeze($('.diamonds').clone());
