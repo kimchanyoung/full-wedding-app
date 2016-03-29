@@ -21,6 +21,11 @@ $(function(){ $(document).foundation();
     $('.title').hide();
     $('.diamonds').css('right', '55%');
   }
+
+  if ($(window).width() <=800) {
+    document.body.style.backgroundImage = "url('pair.png')";
+  }
+
   $backup = Object.freeze($('.diamonds').clone());
 
   $.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete) {

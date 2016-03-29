@@ -124,15 +124,16 @@ margin-top:-400px;  /* your iframe height */
   font-size: .9em;
 }
 
+  body {
+    background-image: image-url('pair.jpg')
+    background-size: cover;
+  }
+
 @media all and (max-width: 770px) {
   #bg-vid {
     display: none !important;
   }
 
-  body {
-    background-image: image-url('pair.jpg')
-    background-size: cover;
-  }
 
   .diamond {
     color: black !important;
