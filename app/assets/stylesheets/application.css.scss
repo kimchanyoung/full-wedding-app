@@ -85,12 +85,16 @@
   cursor: pointer;
 }
 
-.full-content {
+.full-content, {
   padding: 2em;
   display: none;
   height: 100%;
   width: 100%;
   overflow-y: auto;
+  font-family: 'Open Sans';
+}
+
+.full-content h3, .full-content h4 {
   font-family: 'Open Sans';
 }
 
@@ -116,9 +120,11 @@
 #bg-vid {
   position: fixed;
   z-index: -1;
-  width: 100%;
-  height: 100%;
-  border: 10px solid white;
+  width: 102%;
+  height: 102%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .about-fav {
