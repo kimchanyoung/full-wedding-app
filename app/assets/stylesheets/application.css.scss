@@ -58,11 +58,11 @@
 
 #about-container {
   margin-left: 50px;
-  margin-top: 7px;
+  margin-top: 0px;
 }
 
 #wedding-container {
-  margin-left: 160px;
+  margin-left: 170px;
   margin-top: -29px;
 }
 
@@ -72,7 +72,7 @@
 }
 
 #rsvp-container {
-  margin-left:160px;
+  margin-left: 170px;
   margin-top: -29px;
 }
 
@@ -86,7 +86,7 @@
 }
 
 .full-content {
-  padding: 1rem;
+  padding: 2em;
   display: none;
   height: 100%;
   width: 100%;
@@ -136,7 +136,8 @@
 }
 
 .first-impressions {
-  font-size: .9em;
+  font-size: .8em;
+  padding: 1em;
 }
 
 

@@ -35,7 +35,7 @@ li {
   /* line 78, ../sass/screen.scss */
   .diamonds > li {
     margin-right: 0;
-    width: 140px;
+    width: 150px;
   }
 }
 /* line 93, ../sass/screen.scss */
@@ -46,12 +46,12 @@ li {
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px white;
-  -moz-box-shadow: 0 0 0 1px white;
-  box-shadow: 0 0 0 1px white;
+  -webkit-box-shadow: 0 0 0 2px white;
+  -moz-box-shadow: 0 0 0 2px white;
+  box-shadow: 0 0 0 2px white;
   color: white;
   display: block;
-  height: 140px;
+  height: 150px;
   overflow: hidden;
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -60,7 +60,7 @@ li {
   perspective: 1000;
   position: relative;
   text-decoration: none;
-  width: 140px;
+  width: 150px;
 }
 /* line 106, ../sass/screen.scss */
 .csstransforms .diamonds .diamond {
@@ -75,7 +75,7 @@ li {
 /* line 118, ../sass/screen.scss */
 .diamonds .content {
   display: table-cell;
-  height: 140px;
+  height: 150px;
   padding: 0 10px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -84,7 +84,15 @@ li {
   transform: rotate(45deg);
   text-align: center;
   vertical-align: middle;
-  width: 140px;
+  width: 150px;
+  font-size: .9em;
+  font-family: 'Alegreya Sans';
+  font-weight: 500;
+}
+
+.diamonds .content span {
+  padding-bottom: 3px;
+  border-bottom: 2px solid white;
 }
 
 .content:before {
