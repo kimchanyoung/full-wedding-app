@@ -8,6 +8,12 @@
     </div>
   </div>
 
+  <div class='row' id='thankyou'>
+    <div class='small-12 columns'>
+      <h1>Thank you!</h1>
+    </div>
+  </div>
+
   <div class='medium-6 columns'>
     <ul class='diamonds'>
       <li id='about-container' class='li-container'>
@@ -219,7 +225,22 @@
                 </div>
 
                 <div class="ss-form">
-                  <form action="https://docs.google.com/forms/d/1xtla1RVyOoxliioQ9I6535GC1sv_4UMTVW0l4MLo8M0/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+                  <script type='text/javascript'>var submitted=false;</script>
+                  <iframe name='hidden_iframe' id='hidden_iframe' style='display:none' onload="if(submitted){
+                      $('#thankyou').slideDown();
+                      setTimeout(function(){
+                        $('#thankyou').slideUp();
+                      }, 2500)
+                      $('.diamond').slideUp();
+                      setTimeout(function(){
+                        $('.diamonds').html($backup.clone().children()).hide();
+                        $('.diamonds').slideDown();
+                      }, 2500)
+                      $('.full-content').hide();
+                      $('#main-wrapper').toggleClass('click-to-exit');
+                      submitted = false;
+                }"></iframe>
+                  <form action="https://docs.google.com/forms/d/1xtla1RVyOoxliioQ9I6535GC1sv_4UMTVW0l4MLo8M0/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true">
                     <ol role="list" class="ss-question-list" style="padding-left: 0">
 
                       <div class="ss-form-question errorbox-good small-12 medium-6 columns" role="listitem">

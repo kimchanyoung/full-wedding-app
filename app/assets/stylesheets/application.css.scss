@@ -31,6 +31,16 @@
   font-family: Pinyon Script;
 }
 
+#thankyou {
+  position: fixed;
+  color: white;
+  left: 50%;
+  top: 49%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  display: none;
+ }
+
 .content-title {
   margin: 1em;
 }
