@@ -190,3 +190,15 @@
     color: black !important;
   }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #bg-vid {
+    display: none !important;
+  }
+
+  body {
+    background-image: url('scenery.jpg');
+    background-size: cover;
+    z-index: -1;
+  }
+}
