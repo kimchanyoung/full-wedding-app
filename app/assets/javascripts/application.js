@@ -69,7 +69,7 @@ $(function(){ $(document).foundation();
       if ($(window).width() <= 770){
         widthAmt = '92vw';
         leftMargin = bigContentLeftSize;
-      } else if ($('#about-content').is(e.target)) {
+      } else if ($('#about-content').is(e.target) || $('#about-content').is(e.target.parentElement)) {
         widthAmt = '95vw';
         leftMargin = bigContentLeftSize;
       } else {
