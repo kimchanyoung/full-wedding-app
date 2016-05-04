@@ -146,6 +146,30 @@
   padding: 1em;
 }
 
+.welcome {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('scenery.jpg');
+  background-size: cover;
+  z-index: -1;
+}
+
+#welcome-btn {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: auto;
+  pointer-events: auto !important;
+  z-index: 100;
+  font-size: 7em;
+  color: white;
+}
+
+#welcome-btn:hover {
+  font-size: 8em;
+}
 
 @media all and (max-width: 770px) {
   #bg-vid {
@@ -164,5 +188,17 @@
 
   .title h2 {
     color: black !important;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #bg-vid {
+    display: none !important;
+  }
+
+  body {
+    background-image: url('scenery.jpg');
+    background-size: cover;
+    z-index: -1;
   }
 }
